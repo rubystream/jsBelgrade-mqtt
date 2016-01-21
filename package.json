@@ -1,0 +1,16 @@
+{
+  "name": "jsbelgrade-mqtt",
+  "version": "0.0.1",
+  "description": "JSBelgrade meetup MQTT demo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "MQTT",
+    "JSBelgrade",
+    "meetup"
+  ],
+  "author": "Dejan Dimic <dejan.dimic@gmail.com>",
+  "license": "MIT"
+}
