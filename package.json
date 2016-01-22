@@ -3,8 +3,14 @@
   "version": "0.0.1",
   "description": "JSBelgrade meetup MQTT demo",
   "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rubystream/jsBelgrade-mqtt.git"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "NODE_ENV=test node server.js",
+    "jshint": "./node_modules/jshint/bin/jshint *.js config/*.js --verbose"
   },
   "keywords": [
     "MQTT",
@@ -12,5 +18,15 @@
     "meetup"
   ],
   "author": "Dejan Dimic <dejan.dimic@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bunyan": "^1.5.1",
+    "chalk": "^1.1.1",
+    "inquirer": "^0.11.3",
+    "mosca": "^1.0.2",
+    "mqtt": "^1.6.3"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.1"
+  }
 }
